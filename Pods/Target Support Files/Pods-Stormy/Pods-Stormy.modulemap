@@ -1,0 +1,6 @@
+framework module Pods_Stormy {
+  umbrella header "Pods-Stormy-umbrella.h"
+
+  export *
+  module * { export * }
+}

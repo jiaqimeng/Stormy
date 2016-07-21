@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "StormyViewController.loadCitiesData() -&gt; ():StormyViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(Class)((Class)0x10e896758)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

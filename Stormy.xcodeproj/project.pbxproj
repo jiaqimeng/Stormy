@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3278CEB1D19AF9A004756E7 /* BackgroundColorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3278CEA1D19AF9A004756E7 /* BackgroundColorSelector.swift */; };
+		B3278CED1D19BB95004756E7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3278CEC1D19BB95004756E7 /* Utility.swift */; };
+		B345ECE41D1A5663003F725B /* UISideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345ECE31D1A5663003F725B /* UISideMenuTableViewController.swift */; };
+		B345ECE81D1A596C003F725B /* UISideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345ECE71D1A596C003F725B /* UISideMenuTableViewCell.swift */; };
+		B345ECEA1D1A6401003F725B /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345ECE91D1A6401003F725B /* CityInfo.swift */; };
+		B348CABB1D187D78006377C5 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348CABA1D187D78006377C5 /* NetworkOperation.swift */; };
+		B348CABD1D1887CA006377C5 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348CABC1D1887CA006377C5 /* ForecastService.swift */; };
+		B34EA6AB1D1B44A3003BFFF5 /* SearchPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EA6AA1D1B44A3003BFFF5 /* SearchPlaceTableViewController.swift */; };
+		B38CE4B81D20B99500AC642A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CE4AF1D20B99500AC642A /* UIColorExtension.swift */; };
+		B38CE4B91D20B99500AC642A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B38CE4B01D20B99500AC642A /* Info.plist */; };
+		B38CE4BB1D20B99500AC642A /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B38CE4B31D20B99500AC642A /* UIColor_Hex_Swift-dummy.m */; };
+		B390AB7C1D1F838A007D8B0B /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = B390AB711D1F838A007D8B0B /* ASValuePopUpView.m */; };
+		B390AB7D1D1F838A007D8B0B /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B390AB731D1F838A007D8B0B /* ASValueTrackingSlider.m */; };
+		B390AB7F1D1F838A007D8B0B /* ASValueTrackingSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B390AB761D1F838A007D8B0B /* ASValueTrackingSlider-dummy.m */; };
+		B390AB801D1F838A007D8B0B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B390AB791D1F838A007D8B0B /* Info.plist */; };
+		B39CF6AD1D19CC3F0051B1CC /* CLTypingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39CF6AC1D19CC3F0051B1CC /* CLTypingLabel.swift */; };
+		B3B5A3561D1BC59100A288AE /* GooglePlacesAutocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3541D1BC59100A288AE /* GooglePlacesAutocomplete.swift */; };
+		B3B5A3571D1BC59100A288AE /* GooglePlacesAutocomplete.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A3551D1BC59100A288AE /* GooglePlacesAutocomplete.xib */; };
+		B3B5A3591D1BCA5E00A288AE /* GoogleACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3581D1BCA5E00A288AE /* GoogleACViewController.swift */; };
+		B3B5A36C1D1C56FB00A288AE /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3691D1C56FB00A288AE /* MGSwipeButton.m */; };
+		B3B5A36D1D1C56FB00A288AE /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A36B1D1C56FB00A288AE /* MGSwipeTableCell.m */; };
+		B3B5A3821D1E539E00A288AE /* ElasticModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A37C1D1E539E00A288AE /* ElasticModalViewController.swift */; };
+		B3B5A3831D1E539E00A288AE /* ElasticShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A37D1D1E539E00A288AE /* ElasticShapeLayer.swift */; };
+		B3B5A3841D1E539E00A288AE /* ElasticTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A37E1D1E539E00A288AE /* ElasticTransition.swift */; };
+		B3B5A3851D1E539E00A288AE /* ElasticTransitionPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A37F1D1E539E00A288AE /* ElasticTransitionPresentationController.swift */; };
+		B3B5A3861D1E539E00A288AE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3801D1E539E00A288AE /* Util.swift */; };
+		B3B5A3871D1E539E00A288AE /* EdgePanTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3811D1E539E00A288AE /* EdgePanTransition.swift */; };
+		B3B5A3A21D1E5AC300A288AE /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3881D1E5AC300A288AE /* LTCharacterLimbo.swift */; };
+		B3B5A3A31D1E5AC300A288AE /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3891D1E5AC300A288AE /* LTEasing.swift */; };
+		B3B5A3A41D1E5AC300A288AE /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A38A1D1E5AC300A288AE /* LTEmitterView.swift */; };
+		B3B5A3A51D1E5AC300A288AE /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A38B1D1E5AC300A288AE /* LTMorphingEffect.swift */; };
+		B3B5A3A61D1E5AC300A288AE /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A38D1D1E5AC300A288AE /* LTMorphingLabel.swift */; };
+		B3B5A3A71D1E5AC300A288AE /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A38E1D1E5AC300A288AE /* LTMorphingLabel+Anvil.swift */; };
+		B3B5A3A81D1E5AC300A288AE /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A38F1D1E5AC300A288AE /* LTMorphingLabel+Burn.swift */; };
+		B3B5A3A91D1E5AC300A288AE /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3901D1E5AC300A288AE /* LTMorphingLabel+Evaporate.swift */; };
+		B3B5A3AA1D1E5AC300A288AE /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3911D1E5AC300A288AE /* LTMorphingLabel+Fall.swift */; };
+		B3B5A3AB1D1E5AC300A288AE /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3921D1E5AC300A288AE /* LTMorphingLabel+Pixelate.swift */; };
+		B3B5A3AC1D1E5AC300A288AE /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3931D1E5AC300A288AE /* LTMorphingLabel+Sparkle.swift */; };
+		B3B5A3AD1D1E5AC300A288AE /* NSString+LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3941D1E5AC300A288AE /* NSString+LTMorphingLabel.swift */; };
+		B3B5A3AE1D1E5AC300A288AE /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A3951D1E5AC300A288AE /* Fire.png */; };
+		B3B5A3AF1D1E5AC300A288AE /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A3961D1E5AC300A288AE /* Fragment.png */; };
+		B3B5A3B01D1E5AC300A288AE /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A3971D1E5AC300A288AE /* Smoke.png */; };
+		B3B5A3B11D1E5AC300A288AE /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A3981D1E5AC300A288AE /* Sparkle.png */; };
+		B3B5A3B21D1E5AC300A288AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A39A1D1E5AC300A288AE /* Info.plist */; };
+		B3B5A3B41D1E5AC300A288AE /* LTMorphingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A39D1D1E5AC300A288AE /* LTMorphingLabel-dummy.m */; };
+		B3B5A3C71D1F117700A288AE /* TimeZoneLocate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3BB1D1F117700A288AE /* TimeZoneLocate.swift */; };
+		B3B5A3C81D1F117700A288AE /* timezones.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A3BC1D1F117700A288AE /* timezones.json */; };
+		B3B5A3C91D1F117700A288AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A3BE1D1F117700A288AE /* Info.plist */; };
+		B3B5A3CA1D1F117700A288AE /* ResourceBundle-TimeZoneLocate-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B5A3BF1D1F117700A288AE /* ResourceBundle-TimeZoneLocate-Info.plist */; };
+		B3B5A3CC1D1F117700A288AE /* TimeZoneLocate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B5A3C21D1F117700A288AE /* TimeZoneLocate-dummy.m */; };
+		B3FA6ABF1D184F4000F64BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA6ABE1D184F4000F64BFB /* AppDelegate.swift */; };
+		B3FA6AC11D184F4000F64BFB /* StormyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA6AC01D184F4000F64BFB /* StormyViewController.swift */; };
+		B3FA6AC41D184F4000F64BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FA6AC21D184F4000F64BFB /* Main.storyboard */; };
+		B3FA6AC61D184F4000F64BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FA6AC51D184F4000F64BFB /* Assets.xcassets */; };
+		B3FA6AC91D184F4000F64BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FA6AC71D184F4000F64BFB /* LaunchScreen.storyboard */; };
+		B3FA6AD71D1850BE00F64BFB /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3FA6AD61D1850BE00F64BFB /* CurrentWeather.plist */; };
+		B3FA6AD91D18516A00F64BFB /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA6AD81D18516A00F64BFB /* CurrentWeather.swift */; };
+		FFC59CAC756E535554C50BD5 /* Pods_Stormy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C35B57A9C39AFC95F55232 /* Pods_Stormy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22377E48C945FDB4B237B526 /* Pods-Stormy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stormy/Pods-Stormy.release.xcconfig"; sourceTree = "<group>"; };
+		24A5783E190597E53BFB7F2D /* Pods-Stormy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stormy/Pods-Stormy.debug.xcconfig"; sourceTree = "<group>"; };
+		B3278CEA1D19AF9A004756E7 /* BackgroundColorSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorSelector.swift; sourceTree = "<group>"; };
+		B3278CEC1D19BB95004756E7 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B345ECE31D1A5663003F725B /* UISideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISideMenuTableViewController.swift; sourceTree = "<group>"; };
+		B345ECE71D1A596C003F725B /* UISideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		B345ECE91D1A6401003F725B /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
+		B348CABA1D187D78006377C5 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		B348CABC1D1887CA006377C5 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		B34EA6AA1D1B44A3003BFFF5 /* SearchPlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceTableViewController.swift; sourceTree = "<group>"; };
+		B38CE4AE1D20B99500AC642A /* HEXColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		B38CE4AF1D20B99500AC642A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		B38CE4B01D20B99500AC642A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38CE4B11D20B99500AC642A /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		B38CE4B21D20B99500AC642A /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		B38CE4B31D20B99500AC642A /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		B38CE4B41D20B99500AC642A /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		B38CE4B51D20B99500AC642A /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		B390AB701D1F838A007D8B0B /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASValuePopUpView.h; path = ASValueTrackingSlider/ASValuePopUpView.h; sourceTree = "<group>"; };
+		B390AB711D1F838A007D8B0B /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASValuePopUpView.m; path = ASValueTrackingSlider/ASValuePopUpView.m; sourceTree = "<group>"; };
+		B390AB721D1F838A007D8B0B /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASValueTrackingSlider.h; path = ASValueTrackingSlider/ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		B390AB731D1F838A007D8B0B /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASValueTrackingSlider.m; path = ASValueTrackingSlider/ASValueTrackingSlider.m; sourceTree = "<group>"; };
+		B390AB741D1F838A007D8B0B /* ASValueTrackingSlider.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = ASValueTrackingSlider.modulemap; sourceTree = "<group>"; };
+		B390AB751D1F838A007D8B0B /* ASValueTrackingSlider.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ASValueTrackingSlider.xcconfig; sourceTree = "<group>"; };
+		B390AB761D1F838A007D8B0B /* ASValueTrackingSlider-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASValueTrackingSlider-dummy.m"; sourceTree = "<group>"; };
+		B390AB771D1F838A007D8B0B /* ASValueTrackingSlider-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASValueTrackingSlider-prefix.pch"; sourceTree = "<group>"; };
+		B390AB781D1F838A007D8B0B /* ASValueTrackingSlider-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASValueTrackingSlider-umbrella.h"; sourceTree = "<group>"; };
+		B390AB791D1F838A007D8B0B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39CF6AC1D19CC3F0051B1CC /* CLTypingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTypingLabel.swift; sourceTree = "<group>"; };
+		B3B5A3541D1BC59100A288AE /* GooglePlacesAutocomplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesAutocomplete.swift; sourceTree = "<group>"; };
+		B3B5A3551D1BC59100A288AE /* GooglePlacesAutocomplete.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GooglePlacesAutocomplete.xib; sourceTree = "<group>"; };
+		B3B5A3581D1BCA5E00A288AE /* GoogleACViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleACViewController.swift; sourceTree = "<group>"; };
+		B3B5A3671D1C56FB00A288AE /* Stormy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stormy-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3B5A3681D1C56FB00A288AE /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		B3B5A3691D1C56FB00A288AE /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		B3B5A36A1D1C56FB00A288AE /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		B3B5A36B1D1C56FB00A288AE /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		B3B5A37C1D1E539E00A288AE /* ElasticModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticModalViewController.swift; sourceTree = "<group>"; };
+		B3B5A37D1D1E539E00A288AE /* ElasticShapeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticShapeLayer.swift; sourceTree = "<group>"; };
+		B3B5A37E1D1E539E00A288AE /* ElasticTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticTransition.swift; sourceTree = "<group>"; };
+		B3B5A37F1D1E539E00A288AE /* ElasticTransitionPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticTransitionPresentationController.swift; sourceTree = "<group>"; };
+		B3B5A3801D1E539E00A288AE /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B3B5A3811D1E539E00A288AE /* EdgePanTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgePanTransition.swift; sourceTree = "<group>"; };
+		B3B5A3881D1E5AC300A288AE /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		B3B5A3891D1E5AC300A288AE /* LTEasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTEasing.swift; path = LTMorphingLabel/LTEasing.swift; sourceTree = "<group>"; };
+		B3B5A38A1D1E5AC300A288AE /* LTEmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTEmitterView.swift; path = LTMorphingLabel/LTEmitterView.swift; sourceTree = "<group>"; };
+		B3B5A38B1D1E5AC300A288AE /* LTMorphingEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
+		B3B5A38C1D1E5AC300A288AE /* LTMorphingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTMorphingLabel.h; path = LTMorphingLabel/LTMorphingLabel.h; sourceTree = "<group>"; };
+		B3B5A38D1D1E5AC300A288AE /* LTMorphingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTMorphingLabel.swift; path = LTMorphingLabel/LTMorphingLabel.swift; sourceTree = "<group>"; };
+		B3B5A38E1D1E5AC300A288AE /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Anvil.swift"; path = "LTMorphingLabel/LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
+		B3B5A38F1D1E5AC300A288AE /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Burn.swift"; path = "LTMorphingLabel/LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
+		B3B5A3901D1E5AC300A288AE /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
+		B3B5A3911D1E5AC300A288AE /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
+		B3B5A3921D1E5AC300A288AE /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Pixelate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
+		B3B5A3931D1E5AC300A288AE /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Sparkle.swift"; path = "LTMorphingLabel/LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
+		B3B5A3941D1E5AC300A288AE /* NSString+LTMorphingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSString+LTMorphingLabel.swift"; path = "LTMorphingLabel/NSString+LTMorphingLabel.swift"; sourceTree = "<group>"; };
+		B3B5A3951D1E5AC300A288AE /* Fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fire.png; path = LTMorphingLabel/Particles/Fire.png; sourceTree = "<group>"; };
+		B3B5A3961D1E5AC300A288AE /* Fragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fragment.png; path = LTMorphingLabel/Particles/Fragment.png; sourceTree = "<group>"; };
+		B3B5A3971D1E5AC300A288AE /* Smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Smoke.png; path = LTMorphingLabel/Particles/Smoke.png; sourceTree = "<group>"; };
+		B3B5A3981D1E5AC300A288AE /* Sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sparkle.png; path = LTMorphingLabel/Particles/Sparkle.png; sourceTree = "<group>"; };
+		B3B5A39A1D1E5AC300A288AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B5A39B1D1E5AC300A288AE /* LTMorphingLabel.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = LTMorphingLabel.modulemap; sourceTree = "<group>"; };
+		B3B5A39C1D1E5AC300A288AE /* LTMorphingLabel.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = LTMorphingLabel.xcconfig; sourceTree = "<group>"; };
+		B3B5A39D1D1E5AC300A288AE /* LTMorphingLabel-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LTMorphingLabel-dummy.m"; sourceTree = "<group>"; };
+		B3B5A39E1D1E5AC300A288AE /* LTMorphingLabel-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-prefix.pch"; sourceTree = "<group>"; };
+		B3B5A39F1D1E5AC300A288AE /* LTMorphingLabel-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-umbrella.h"; sourceTree = "<group>"; };
+		B3B5A3BB1D1F117700A288AE /* TimeZoneLocate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeZoneLocate.swift; path = Pod/Classes/TimeZoneLocate.swift; sourceTree = "<group>"; };
+		B3B5A3BC1D1F117700A288AE /* timezones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = timezones.json; path = Pod/Assets/timezones.json; sourceTree = "<group>"; };
+		B3B5A3BE1D1F117700A288AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B5A3BF1D1F117700A288AE /* ResourceBundle-TimeZoneLocate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TimeZoneLocate-Info.plist"; sourceTree = "<group>"; };
+		B3B5A3C01D1F117700A288AE /* TimeZoneLocate.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = TimeZoneLocate.modulemap; sourceTree = "<group>"; };
+		B3B5A3C11D1F117700A288AE /* TimeZoneLocate.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TimeZoneLocate.xcconfig; sourceTree = "<group>"; };
+		B3B5A3C21D1F117700A288AE /* TimeZoneLocate-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TimeZoneLocate-dummy.m"; sourceTree = "<group>"; };
+		B3B5A3C31D1F117700A288AE /* TimeZoneLocate-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TimeZoneLocate-prefix.pch"; sourceTree = "<group>"; };
+		B3B5A3C41D1F117700A288AE /* TimeZoneLocate-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TimeZoneLocate-umbrella.h"; sourceTree = "<group>"; };
+		B3FA6ABB1D184F4000F64BFB /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FA6ABE1D184F4000F64BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3FA6AC01D184F4000F64BFB /* StormyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyViewController.swift; sourceTree = "<group>"; };
+		B3FA6AC31D184F4000F64BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3FA6AC51D184F4000F64BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3FA6AC81D184F4000F64BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3FA6ACA1D184F4000F64BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FA6AD61D1850BE00F64BFB /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		B3FA6AD81D18516A00F64BFB /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		D3C35B57A9C39AFC95F55232 /* Pods_Stormy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stormy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3FA6AB81D184F4000F64BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC59CAC756E535554C50BD5 /* Pods_Stormy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CE440CE300151B103683A7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3C35B57A9C39AFC95F55232 /* Pods_Stormy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B38CE4B61D20B99500AC642A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B38CE4B01D20B99500AC642A /* Info.plist */,
+				B38CE4B11D20B99500AC642A /* UIColor_Hex_Swift.modulemap */,
+				B38CE4B21D20B99500AC642A /* UIColor_Hex_Swift.xcconfig */,
+				B38CE4B31D20B99500AC642A /* UIColor_Hex_Swift-dummy.m */,
+				B38CE4B41D20B99500AC642A /* UIColor_Hex_Swift-prefix.pch */,
+				B38CE4B51D20B99500AC642A /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+		B38CE4B71D20B99500AC642A /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B38CE4AE1D20B99500AC642A /* HEXColor.h */,
+				B38CE4AF1D20B99500AC642A /* UIColorExtension.swift */,
+				B38CE4B61D20B99500AC642A /* Support Files */,
+			);
+			name = UIColor_Hex_Swift;
+			path = ../Pods/UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+		B390AB7A1D1F838A007D8B0B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B390AB741D1F838A007D8B0B /* ASValueTrackingSlider.modulemap */,
+				B390AB751D1F838A007D8B0B /* ASValueTrackingSlider.xcconfig */,
+				B390AB761D1F838A007D8B0B /* ASValueTrackingSlider-dummy.m */,
+				B390AB771D1F838A007D8B0B /* ASValueTrackingSlider-prefix.pch */,
+				B390AB781D1F838A007D8B0B /* ASValueTrackingSlider-umbrella.h */,
+				B390AB791D1F838A007D8B0B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ASValueTrackingSlider";
+			sourceTree = "<group>";
+		};
+		B390AB7B1D1F838A007D8B0B /* ASValueTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				B390AB701D1F838A007D8B0B /* ASValuePopUpView.h */,
+				B390AB711D1F838A007D8B0B /* ASValuePopUpView.m */,
+				B390AB721D1F838A007D8B0B /* ASValueTrackingSlider.h */,
+				B390AB731D1F838A007D8B0B /* ASValueTrackingSlider.m */,
+				B390AB7A1D1F838A007D8B0B /* Support Files */,
+			);
+			name = ASValueTrackingSlider;
+			path = ../Pods/ASValueTrackingSlider;
+			sourceTree = "<group>";
+		};
+		B3B5A36E1D1DA09200A288AE /* MGSwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A3681D1C56FB00A288AE /* MGSwipeButton.h */,
+				B3B5A3691D1C56FB00A288AE /* MGSwipeButton.m */,
+				B3B5A36A1D1C56FB00A288AE /* MGSwipeTableCell.h */,
+				B3B5A36B1D1C56FB00A288AE /* MGSwipeTableCell.m */,
+			);
+			name = MGSwipeCell;
+			sourceTree = "<group>";
+		};
+		B3B5A36F1D1DA0C200A288AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B38CE4B71D20B99500AC642A /* UIColor_Hex_Swift */,
+				B390AB7B1D1F838A007D8B0B /* ASValueTrackingSlider */,
+				B3B5A3C61D1F117700A288AE /* TimeZoneLocate */,
+				B3B5A3A11D1E5AC300A288AE /* LTMorphingLabel */,
+				B3B5A3711D1DA43200A288AE /* ElasticTransition */,
+				B39CF6AC1D19CC3F0051B1CC /* CLTypingLabel.swift */,
+				B3B5A3701D1DA0E000A288AE /* GoogleAC */,
+				B3B5A36E1D1DA09200A288AE /* MGSwipeCell */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		B3B5A3701D1DA0E000A288AE /* GoogleAC */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A3541D1BC59100A288AE /* GooglePlacesAutocomplete.swift */,
+				B3B5A3551D1BC59100A288AE /* GooglePlacesAutocomplete.xib */,
+			);
+			name = GoogleAC;
+			sourceTree = "<group>";
+		};
+		B3B5A3711D1DA43200A288AE /* ElasticTransition */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A37C1D1E539E00A288AE /* ElasticModalViewController.swift */,
+				B3B5A37D1D1E539E00A288AE /* ElasticShapeLayer.swift */,
+				B3B5A37E1D1E539E00A288AE /* ElasticTransition.swift */,
+				B3B5A37F1D1E539E00A288AE /* ElasticTransitionPresentationController.swift */,
+				B3B5A3801D1E539E00A288AE /* Util.swift */,
+				B3B5A3811D1E539E00A288AE /* EdgePanTransition.swift */,
+			);
+			name = ElasticTransition;
+			sourceTree = "<group>";
+		};
+		B3B5A3991D1E5AC300A288AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A3951D1E5AC300A288AE /* Fire.png */,
+				B3B5A3961D1E5AC300A288AE /* Fragment.png */,
+				B3B5A3971D1E5AC300A288AE /* Smoke.png */,
+				B3B5A3981D1E5AC300A288AE /* Sparkle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B3B5A3A01D1E5AC300A288AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A39A1D1E5AC300A288AE /* Info.plist */,
+				B3B5A39B1D1E5AC300A288AE /* LTMorphingLabel.modulemap */,
+				B3B5A39C1D1E5AC300A288AE /* LTMorphingLabel.xcconfig */,
+				B3B5A39D1D1E5AC300A288AE /* LTMorphingLabel-dummy.m */,
+				B3B5A39E1D1E5AC300A288AE /* LTMorphingLabel-prefix.pch */,
+				B3B5A39F1D1E5AC300A288AE /* LTMorphingLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LTMorphingLabel";
+			sourceTree = "<group>";
+		};
+		B3B5A3A11D1E5AC300A288AE /* LTMorphingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A3881D1E5AC300A288AE /* LTCharacterLimbo.swift */,
+				B3B5A3891D1E5AC300A288AE /* LTEasing.swift */,
+				B3B5A38A1D1E5AC300A288AE /* LTEmitterView.swift */,
+				B3B5A38B1D1E5AC300A288AE /* LTMorphingEffect.swift */,
+				B3B5A38C1D1E5AC300A288AE /* LTMorphingLabel.h */,
+				B3B5A38D1D1E5AC300A288AE /* LTMorphingLabel.swift */,
+				B3B5A38E1D1E5AC300A288AE /* LTMorphingLabel+Anvil.swift */,
+				B3B5A38F1D1E5AC300A288AE /* LTMorphingLabel+Burn.swift */,
+				B3B5A3901D1E5AC300A288AE /* LTMorphingLabel+Evaporate.swift */,
+				B3B5A3911D1E5AC300A288AE /* LTMorphingLabel+Fall.swift */,
+				B3B5A3921D1E5AC300A288AE /* LTMorphingLabel+Pixelate.swift */,
+				B3B5A3931D1E5AC300A288AE /* LTMorphingLabel+Sparkle.swift */,
+				B3B5A3941D1E5AC300A288AE /* NSString+LTMorphingLabel.swift */,
+				B3B5A3991D1E5AC300A288AE /* Resources */,
+				B3B5A3A01D1E5AC300A288AE /* Support Files */,
+			);
+			name = LTMorphingLabel;
+			path = ../Pods/LTMorphingLabel;
+			sourceTree = "<group>";
+		};
+		B3B5A3BD1D1F117700A288AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A3BC1D1F117700A288AE /* timezones.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B3B5A3C51D1F117700A288AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A3BE1D1F117700A288AE /* Info.plist */,
+				B3B5A3BF1D1F117700A288AE /* ResourceBundle-TimeZoneLocate-Info.plist */,
+				B3B5A3C01D1F117700A288AE /* TimeZoneLocate.modulemap */,
+				B3B5A3C11D1F117700A288AE /* TimeZoneLocate.xcconfig */,
+				B3B5A3C21D1F117700A288AE /* TimeZoneLocate-dummy.m */,
+				B3B5A3C31D1F117700A288AE /* TimeZoneLocate-prefix.pch */,
+				B3B5A3C41D1F117700A288AE /* TimeZoneLocate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TimeZoneLocate";
+			sourceTree = "<group>";
+		};
+		B3B5A3C61D1F117700A288AE /* TimeZoneLocate */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A3BB1D1F117700A288AE /* TimeZoneLocate.swift */,
+				B3B5A3BD1D1F117700A288AE /* Resources */,
+				B3B5A3C51D1F117700A288AE /* Support Files */,
+			);
+			name = TimeZoneLocate;
+			path = ../Pods/TimeZoneLocate;
+			sourceTree = "<group>";
+		};
+		B3FA6AB21D184F4000F64BFB = {
+			isa = PBXGroup;
+			children = (
+				B3FA6ABD1D184F4000F64BFB /* Stormy */,
+				B3FA6ABC1D184F4000F64BFB /* Products */,
+				F6896A210715DF8FDDBB6020 /* Pods */,
+				3CE440CE300151B103683A7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3FA6ABC1D184F4000F64BFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA6ABB1D184F4000F64BFB /* Stormy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3FA6ABD1D184F4000F64BFB /* Stormy */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5A36F1D1DA0C200A288AE /* Support Files */,
+				B3FA6AD61D1850BE00F64BFB /* CurrentWeather.plist */,
+				B3FA6ABE1D184F4000F64BFB /* AppDelegate.swift */,
+				B3FA6AC01D184F4000F64BFB /* StormyViewController.swift */,
+				B3FA6AC21D184F4000F64BFB /* Main.storyboard */,
+				B3FA6AC51D184F4000F64BFB /* Assets.xcassets */,
+				B3FA6AC71D184F4000F64BFB /* LaunchScreen.storyboard */,
+				B3FA6ACA1D184F4000F64BFB /* Info.plist */,
+				B3FA6AD81D18516A00F64BFB /* CurrentWeather.swift */,
+				B348CABA1D187D78006377C5 /* NetworkOperation.swift */,
+				B348CABC1D1887CA006377C5 /* ForecastService.swift */,
+				B3278CEA1D19AF9A004756E7 /* BackgroundColorSelector.swift */,
+				B3278CEC1D19BB95004756E7 /* Utility.swift */,
+				B345ECE31D1A5663003F725B /* UISideMenuTableViewController.swift */,
+				B345ECE71D1A596C003F725B /* UISideMenuTableViewCell.swift */,
+				B345ECE91D1A6401003F725B /* CityInfo.swift */,
+				B34EA6AA1D1B44A3003BFFF5 /* SearchPlaceTableViewController.swift */,
+				B3B5A3581D1BCA5E00A288AE /* GoogleACViewController.swift */,
+				B3B5A3671D1C56FB00A288AE /* Stormy-Bridging-Header.h */,
+			);
+			path = Stormy;
+			sourceTree = "<group>";
+		};
+		F6896A210715DF8FDDBB6020 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24A5783E190597E53BFB7F2D /* Pods-Stormy.debug.xcconfig */,
+				22377E48C945FDB4B237B526 /* Pods-Stormy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3FA6ABA1D184F4000F64BFB /* Stormy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3FA6ACD1D184F4000F64BFB /* Build configuration list for PBXNativeTarget "Stormy" */;
+			buildPhases = (
+				57660FC08D41188153A03094 /* [CP] Check Pods Manifest.lock */,
+				B3FA6AB71D184F4000F64BFB /* Sources */,
+				B3FA6AB81D184F4000F64BFB /* Frameworks */,
+				B3FA6AB91D184F4000F64BFB /* Resources */,
+				4641093FE7736A8C9D60E0D5 /* [CP] Embed Pods Frameworks */,
+				9F1DD760D5E8D3EB081B6868 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stormy;
+			productName = Stormy;
+			productReference = B3FA6ABB1D184F4000F64BFB /* Stormy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3FA6AB31D184F4000F64BFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Meng Jiaqi";
+				TargetAttributes = {
+					B3FA6ABA1D184F4000F64BFB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FPX49J3CRN;
+					};
+				};
+			};
+			buildConfigurationList = B3FA6AB61D184F4000F64BFB /* Build configuration list for PBXProject "Stormy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3FA6AB21D184F4000F64BFB;
+			productRefGroup = B3FA6ABC1D184F4000F64BFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3FA6ABA1D184F4000F64BFB /* Stormy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3FA6AB91D184F4000F64BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38CE4B91D20B99500AC642A /* Info.plist in Resources */,
+				B3B5A3B11D1E5AC300A288AE /* Sparkle.png in Resources */,
+				B3B5A3CA1D1F117700A288AE /* ResourceBundle-TimeZoneLocate-Info.plist in Resources */,
+				B3B5A3AF1D1E5AC300A288AE /* Fragment.png in Resources */,
+				B3FA6AC91D184F4000F64BFB /* LaunchScreen.storyboard in Resources */,
+				B3FA6AD71D1850BE00F64BFB /* CurrentWeather.plist in Resources */,
+				B3B5A3B01D1E5AC300A288AE /* Smoke.png in Resources */,
+				B3FA6AC61D184F4000F64BFB /* Assets.xcassets in Resources */,
+				B390AB801D1F838A007D8B0B /* Info.plist in Resources */,
+				B3B5A3AE1D1E5AC300A288AE /* Fire.png in Resources */,
+				B3B5A3C81D1F117700A288AE /* timezones.json in Resources */,
+				B3FA6AC41D184F4000F64BFB /* Main.storyboard in Resources */,
+				B3B5A3B21D1E5AC300A288AE /* Info.plist in Resources */,
+				B3B5A3571D1BC59100A288AE /* GooglePlacesAutocomplete.xib in Resources */,
+				B3B5A3C91D1F117700A288AE /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4641093FE7736A8C9D60E0D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stormy/Pods-Stormy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57660FC08D41188153A03094 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1DD760D5E8D3EB081B6868 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stormy/Pods-Stormy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3FA6AB71D184F4000F64BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B5A3A41D1E5AC300A288AE /* LTEmitterView.swift in Sources */,
+				B3B5A3AA1D1E5AC300A288AE /* LTMorphingLabel+Fall.swift in Sources */,
+				B3B5A3A61D1E5AC300A288AE /* LTMorphingLabel.swift in Sources */,
+				B3B5A3851D1E539E00A288AE /* ElasticTransitionPresentationController.swift in Sources */,
+				B3B5A3AB1D1E5AC300A288AE /* LTMorphingLabel+Pixelate.swift in Sources */,
+				B3B5A3A71D1E5AC300A288AE /* LTMorphingLabel+Anvil.swift in Sources */,
+				B38CE4BB1D20B99500AC642A /* UIColor_Hex_Swift-dummy.m in Sources */,
+				B3B5A3871D1E539E00A288AE /* EdgePanTransition.swift in Sources */,
+				B39CF6AD1D19CC3F0051B1CC /* CLTypingLabel.swift in Sources */,
+				B3B5A3821D1E539E00A288AE /* ElasticModalViewController.swift in Sources */,
+				B345ECE81D1A596C003F725B /* UISideMenuTableViewCell.swift in Sources */,
+				B3B5A3861D1E539E00A288AE /* Util.swift in Sources */,
+				B3B5A3A21D1E5AC300A288AE /* LTCharacterLimbo.swift in Sources */,
+				B3B5A3AC1D1E5AC300A288AE /* LTMorphingLabel+Sparkle.swift in Sources */,
+				B3B5A36C1D1C56FB00A288AE /* MGSwipeButton.m in Sources */,
+				B3B5A3C71D1F117700A288AE /* TimeZoneLocate.swift in Sources */,
+				B3B5A3A31D1E5AC300A288AE /* LTEasing.swift in Sources */,
+				B390AB7F1D1F838A007D8B0B /* ASValueTrackingSlider-dummy.m in Sources */,
+				B345ECE41D1A5663003F725B /* UISideMenuTableViewController.swift in Sources */,
+				B3B5A3AD1D1E5AC300A288AE /* NSString+LTMorphingLabel.swift in Sources */,
+				B34EA6AB1D1B44A3003BFFF5 /* SearchPlaceTableViewController.swift in Sources */,
+				B3B5A3B41D1E5AC300A288AE /* LTMorphingLabel-dummy.m in Sources */,
+				B3278CED1D19BB95004756E7 /* Utility.swift in Sources */,
+				B348CABD1D1887CA006377C5 /* ForecastService.swift in Sources */,
+				B3B5A3841D1E539E00A288AE /* ElasticTransition.swift in Sources */,
+				B390AB7C1D1F838A007D8B0B /* ASValuePopUpView.m in Sources */,
+				B38CE4B81D20B99500AC642A /* UIColorExtension.swift in Sources */,
+				B3B5A3A81D1E5AC300A288AE /* LTMorphingLabel+Burn.swift in Sources */,
+				B348CABB1D187D78006377C5 /* NetworkOperation.swift in Sources */,
+				B3B5A3831D1E539E00A288AE /* ElasticShapeLayer.swift in Sources */,
+				B3B5A3561D1BC59100A288AE /* GooglePlacesAutocomplete.swift in Sources */,
+				B3FA6AC11D184F4000F64BFB /* StormyViewController.swift in Sources */,
+				B3FA6AD91D18516A00F64BFB /* CurrentWeather.swift in Sources */,
+				B3B5A3CC1D1F117700A288AE /* TimeZoneLocate-dummy.m in Sources */,
+				B3278CEB1D19AF9A004756E7 /* BackgroundColorSelector.swift in Sources */,
+				B390AB7D1D1F838A007D8B0B /* ASValueTrackingSlider.m in Sources */,
+				B3B5A3591D1BCA5E00A288AE /* GoogleACViewController.swift in Sources */,
+				B345ECEA1D1A6401003F725B /* CityInfo.swift in Sources */,
+				B3B5A36D1D1C56FB00A288AE /* MGSwipeTableCell.m in Sources */,
+				B3B5A3A51D1E5AC300A288AE /* LTMorphingEffect.swift in Sources */,
+				B3B5A3A91D1E5AC300A288AE /* LTMorphingLabel+Evaporate.swift in Sources */,
+				B3FA6ABF1D184F4000F64BFB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3FA6AC21D184F4000F64BFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3FA6AC31D184F4000F64BFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3FA6AC71D184F4000F64BFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3FA6AC81D184F4000F64BFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3FA6ACB1D184F4000F64BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3FA6ACC1D184F4000F64BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3FA6ACE1D184F4000F64BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A5783E190597E53BFB7F2D /* Pods-Stormy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Stormy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-9951026.Stormy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stormy/Stormy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B3FA6ACF1D184F4000F64BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22377E48C945FDB4B237B526 /* Pods-Stormy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Stormy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-9951026.Stormy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stormy/Stormy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3FA6AB61D184F4000F64BFB /* Build configuration list for PBXProject "Stormy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FA6ACB1D184F4000F64BFB /* Debug */,
+				B3FA6ACC1D184F4000F64BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3FA6ACD1D184F4000F64BFB /* Build configuration list for PBXNativeTarget "Stormy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FA6ACE1D184F4000F64BFB /* Debug */,
+				B3FA6ACF1D184F4000F64BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3FA6AB31D184F4000F64BFB /* Project object */;
+}
