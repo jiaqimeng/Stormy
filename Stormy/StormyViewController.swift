@@ -46,6 +46,10 @@ class StormyViewController: UIViewController, CLLocationManagerDelegate, GoogleA
     @IBAction func refreshWeather() {
         toggleRefreshAnimation(true)
         loadCitiesData()
+        if !cities.contains(cityInfo!) {
+            toggleRefreshAnimation(false)
+            return
+        }
         if isCurrentLocation {
             updateGPSLocation()
         } else {
