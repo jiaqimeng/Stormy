@@ -28,6 +28,7 @@ class UISideMenuTableViewController: UITableViewController, ElasticMenuTransitio
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.contentInset.top = 20
         transition.edge = .Right
         transition.sticky = false
         transition.radiusFactor = 0

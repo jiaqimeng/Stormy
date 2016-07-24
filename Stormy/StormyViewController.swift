@@ -428,24 +428,43 @@ class StormyViewController: UIViewController, CLLocationManagerDelegate, GoogleA
                 }
                 else {
                     if let tempHour = Int(hh) {
-                        let morning = ap == "AM"
-                        let newHour = tempHour % 12 + hour + 1
-                        let changeAp = newHour >= 12
-                        if morning {
-                            if changeAp  {
+                        
+                        
+                        let mod = (tempHour + hour + 1) / 12
+                        if mod == 1 {
+                            if ap == "AM" {
                                 ap = "PM"
                             }
-                        } else {
-                            if changeAp {
+                            else {
                                 ap = "AM"
                             }
                         }
-                        let modHour = newHour % 12
-                        var newHourString = "\(modHour)"
-                        if ap == "PM" && modHour == 0 {
-                            newHourString = "12"
+                        var modHour = (tempHour + hour + 1) % 12
+                        if modHour == 0 && ap == "PM" {
+                            modHour = 12
                         }
-                        result = "\(newHourString):00 \(ap)"
+                        result = "\(modHour):00 \(ap)"
+
+                        
+                        
+//                        let morning = ap == "AM"
+//                        let newHour = tempHour % 12 + hour + 1
+//                        let changeAp = newHour >= 12
+//                        if morning {
+//                            if changeAp  {
+//                                ap = "PM"
+//                            }
+//                        } else {
+//                            if changeAp {
+//                                ap = "AM"
+//                            }
+//                        }
+//                        let modHour = newHour % 12
+//                        var newHourString = "\(modHour)"
+//                        if ap == "PM" && modHour == 0 {
+//                            newHourString = "12"
+//                        }
+//                        result = "\(newHourString):00 \(ap)"
                     }
                 }
                 

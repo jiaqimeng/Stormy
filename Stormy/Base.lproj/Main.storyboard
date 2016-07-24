@@ -290,9 +290,9 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-j5-kjX">
-                                <rect key="frame" x="294" y="69" width="65" height="29"/>
+                                <rect key="frame" x="284" y="69" width="75" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="0vP-AV-f7q"/>
+                                    <constraint firstAttribute="width" constant="75" id="0vP-AV-f7q"/>
                                     <constraint firstAttribute="height" constant="28" id="3mt-DP-N96"/>
                                 </constraints>
                                 <segments>
@@ -567,18 +567,18 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RJx-6n-n3K" id="SAX-MJ-ozh">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ske-lc-5hj">
-                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rWF-Qn-287">
-                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -602,7 +602,6 @@
         <!--Navigation Controller-->
         <scene sceneID="V4J-l0-uEv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PGd-vp-J15" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gmn-Wb-on9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0qe-Eq-vWF">
@@ -614,6 +613,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lmz-EG-RfF"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGd-vp-J15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-398" y="13"/>
         </scene>
@@ -634,7 +634,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijY-jx-6xO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="1976"/>
+            <point key="canvasLocation" x="561.5" y="1891.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oZR-DX-FWz">
@@ -685,7 +685,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="546"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pv3-4X-PbB" id="Cyu-m1-nqR">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="545"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="546"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1c-CN-Hw8">
